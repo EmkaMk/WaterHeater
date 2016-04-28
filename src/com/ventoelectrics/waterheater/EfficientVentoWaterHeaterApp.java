@@ -14,7 +14,8 @@ public class EfficientVentoWaterHeaterApp {
 		final VentoHeater ventoHeater = new VentoHeater();
 		final VentoPowerSwitch ventoPowerSwitch = new VentoPowerSwitch();
 
-		final VentoThermoregulator ventoThermoregulator = new ThermoregulatorAdapter(new AcmeEfficientThermoregulator(new ThermometerAdapter(ventoThermometer),new HeaterAdapter(ventoHeater)));
+		final VentoThermoregulator ventoThermoregulator = new ThermoregulatorAdapter(new AcmeEfficientThermoregulator(
+				new ThermometerAdapter(ventoThermometer), new HeaterAdapter(ventoHeater)));
 
 		ventoPowerSwitch.controlPowerFor(ventoThermoregulator);
 		ventoPowerSwitch.controlPowerFor(ventoHeater);

@@ -15,6 +15,7 @@ public class ThermometerAdapter implements AcmeThermometerDevice {
 	@Override
 	public Integer getTemperature() {
 		// TODO Auto-generated method stub
+		
 		return this.thermometer.getTemperature();
 			}
 	

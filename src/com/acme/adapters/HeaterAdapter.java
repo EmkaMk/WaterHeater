@@ -16,15 +16,14 @@ public class HeaterAdapter implements AcmeHeaterDevice {
 	public void enable() {
 		// TODO Auto-generated method stub
 		this.heater.enable();
-		
+
 	}
 
 	@Override
 	public void disable() {
 		// TODO Auto-generated method stub
 		this.heater.disable();
-		
+
 	}
-	
-	
+
 }
